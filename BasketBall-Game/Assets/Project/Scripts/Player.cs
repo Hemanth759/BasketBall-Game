@@ -11,15 +11,30 @@ public class Player : MonoBehaviour
     [Space]
     [Header("Some public variables:")]
     public float ballOffSet;
+    public float ballThrowingForce;
+
+    // some private variables
+    private bool isHoldingBall = true;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        ball.GetComponent<Rigidbody>().useGravity = false;        
+        ball.GetComponent<Rigidbody>().useGravity = false;
     }
 
     void FixedUpdate()
     {
-        ball.transform.position = playerCamera.transform.position + (playerCamera.transform.forward * ballOffSet);
+        if (isHoldingBall)
+        {
+            ball.transform.position = playerCamera.transform.position + (playerCamera.transform.forward * ballOffSet);
+            if (Input.GetMouseButtonDown(0))
+            {
+                isHoldingBall = false;
+                ball.GetComponent<Rigidbody>().useGravity = true;
+
+                ball.GetComponent<Rigidbody>().AddForce(playerCamera.transform.forward * ballThrowingForce);
+            }
+        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Header("game Object varialbles:")]
-    public GameObject ball;
+    public BallParticle ball;
     public GameObject playerCamera;
 
     [Space]
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
             {
                 isHoldingBall = false;
                 ball.GetComponent<Rigidbody>().useGravity = true;
-
+                ball.startTrailing();
                 ball.GetComponent<Rigidbody>().AddForce(playerCamera.transform.forward * ballThrowingForce);
             }
         }

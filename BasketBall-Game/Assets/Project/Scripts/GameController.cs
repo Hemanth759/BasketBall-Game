@@ -12,12 +12,6 @@ public class GameController : MonoBehaviour
 
     public float resetTime = 5f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

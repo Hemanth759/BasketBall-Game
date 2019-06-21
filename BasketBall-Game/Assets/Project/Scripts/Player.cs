@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float ballThrowingForce;
 
     // some private variables
-    private bool isHoldingBall = true;
+    public bool isHoldingBall = true;
 
 
     // Start is called before the first frame update

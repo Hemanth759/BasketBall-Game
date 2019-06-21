@@ -334,6 +334,8 @@ MonoBehaviour:
   ball: {fileID: 1157001495}
   playerCamera: {fileID: 654810373}
   ballOffSet: 2
+  ballThrowingForce: 1000
+  isHoldingBall: 1
 --- !u!1 &394192900
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805990285}
+  - component: {fileID: 805990286}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -588,6 +591,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805990286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805990284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d2bcc316f771e448659a42af8706b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 385967922}
+  resetTime: 7
 --- !u!1001 &1009641887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -781,7 +798,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157001495}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0658280e158a83f4887e3490c5c4ae9f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

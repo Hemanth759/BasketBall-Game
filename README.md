@@ -7,4 +7,4 @@ A Basketball game created using Unity game Engine
 * Link for the tutorial is [Here](https://academy.zenva.com/course/unity-game-development-create-a-basketball-game/)
 
 ### Play now
-Foloow this link to play the [**game**](http://hemanth759.github.io/BasketBall-Game)
+Follow this link to play the [**game**](http://hemanth759.github.io/BasketBall-Game)

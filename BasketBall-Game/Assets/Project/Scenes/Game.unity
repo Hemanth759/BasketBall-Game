@@ -335,7 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1157001501}
   playerCamera: {fileID: 654810373}
-  ballOffSet: 1.51
+  ballOffSet: 2
   ballThrowingForce: 650
   isHoldingBall: 1
 --- !u!1 &394192900
